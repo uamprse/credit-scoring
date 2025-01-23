@@ -42,7 +42,7 @@ def train_model(filepath, target_column):
 
 
 if __name__ == "__main__":
-    train_model("/Users/taisiaskovpen/Desktop/BMSTU/PythonProject/credit-scoring/data/train.csv", "Credit_Score")
+    train_model("/data/train.csv", "Credit_Score")
 
-    predictions = predict("/Users/taisiaskovpen/Desktop/BMSTU/PythonProject/credit-scoring/data/test.csv", "models/model.pkl")
+    predictions = predict("/data/test.csv", "models/model.pkl")
     print("Предсказания:", predictions)
